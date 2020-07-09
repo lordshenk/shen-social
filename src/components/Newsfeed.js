@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import users from "../data";
 import Menu from "./Menu";
 
 export default function Newsfeed(props) {
   const [updateComp, setUpdateComp] = useState(false);
-
+  useEffect(() => {
+    window.scrollTo( 0, 0)
+  }, [])
   function handleClickHeart(e) {
     let element = e.currentTarget;
     if (!element.className) {
