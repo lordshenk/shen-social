@@ -1,7 +1,7 @@
 {
-  "name": "social network",
+  "name": "react",
   "version": "1.0.0",
-  "description": "social network build using reactjs",
+  "description": "React example starter project",
   "keywords": [
     "react",
     "starter"
