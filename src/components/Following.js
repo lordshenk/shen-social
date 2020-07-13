@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Menu from "./Menu";
 import { Container, Row, Col } from "reactstrap";
 import users from "../data";
@@ -10,9 +10,6 @@ export default function Following(props) {
     let element = e.currentTarget;
     setIgnoreUser([...ignoreUser, element.id]);
   }
-  useEffect(() => {
-    window.scrollTo( 0, 0)
-  }, [])
   return (
     <div className="following">
       <Menu />

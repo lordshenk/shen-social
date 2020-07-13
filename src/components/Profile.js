@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import Menu from "./Menu";
@@ -7,9 +7,6 @@ export default function(props) {
   function handleLogOut() {
     localStorage.clear();
   }
-  useEffect(() => {
-    window.scrollTo( 0, 0)
-  }, [])
   return (
     <div className="profile">
       <Menu />

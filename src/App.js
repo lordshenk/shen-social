@@ -7,11 +7,13 @@ import Newsfeed from "./components/Newsfeed";
 import Following from "./components/Following";
 import Post from "./components/Post";
 import Profile from "./components/Profile";
+import ScrollToTop from './components/ScrollToTop';
 
 class App extends Component {
   render() {
     return (
       <Router>
+        <ScrollToTop />
         <div className="App">
           <Switch>
             <Route path="/user/create">
